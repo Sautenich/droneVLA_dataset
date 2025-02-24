@@ -1,0 +1,242 @@
+[
+    {
+        "prompt": "Fly through the gate with Nikola Tesla",
+        "options": [
+            "Selena_Gomez.jpg",
+            "Kylian_Mbappe.jpg",
+            "Nikola_Tesla.jpg"
+        ],
+        "correct": 3,
+        "texture": "textures/room",
+        "gates": {
+            "gate_1": {
+                "size": "small",
+                "color": "green"
+            },
+            "gate_2": {
+                "size": "small",
+                "color": "blue"
+            },
+            "gate_3": {
+                "size": "small",
+                "color": "red"
+            }
+        }
+    },
+    {
+        "prompt": "Fly through the gate with Madonna",
+        "options": [
+            "Madonna.jpg",
+            "Nikola_Tesla.jpg",
+            "Ding_Liren.jpg"
+        ],
+        "correct": 1,
+        "texture": "textures/room",
+        "gates": {
+            "gate_1": {
+                "size": "big",
+                "color": "green"
+            },
+            "gate_2": {
+                "size": "big",
+                "color": "red"
+            },
+            "gate_3": {
+                "size": "big",
+                "color": "blue"
+            }
+        }
+    },
+    {
+        "prompt": "Fly through the gate with Elvis Presley",
+        "options": [
+            "Elvis_Presley.jpg",
+            "Michelangelo.jpg",
+            "Wolfgang_Amadeus_Mozart.jpg"
+        ],
+        "correct": 1,
+        "texture": "textures/room",
+        "gates": {
+            "gate_1": {
+                "size": "big",
+                "color": "blue"
+            },
+            "gate_2": {
+                "size": "small",
+                "color": "green"
+            },
+            "gate_3": {
+                "size": "big",
+                "color": "red"
+            }
+        }
+    },
+    {
+        "prompt": "Fly through the gate with Elon Musk",
+        "options": [
+            "Elon_Musk.jpg",
+            "Vinicius_Junior.jpg",
+            "JK_Rowling.jpg"
+        ],
+        "correct": 1,
+        "texture": "textures/room",
+        "gates": {
+            "gate_1": {
+                "size": "big",
+                "color": "green"
+            },
+            "gate_2": {
+                "size": "big",
+                "color": "red"
+            },
+            "gate_3": {
+                "size": "small",
+                "color": "blue"
+            }
+        }
+    },
+    {
+        "prompt": "Fly through the gate with Pep Guardiola",
+        "options": [
+            "Cristiano_Ronaldo.jpg",
+            "Pep_Guardiola.jpg",
+            "Pablo_Picasso.jpg"
+        ],
+        "correct": 2,
+        "texture": "textures/room",
+        "gates": {
+            "gate_1": {
+                "size": "big",
+                "color": "red"
+            },
+            "gate_2": {
+                "size": "small",
+                "color": "blue"
+            },
+            "gate_3": {
+                "size": "small",
+                "color": "green"
+            }
+        }
+    },
+    {
+        "prompt": "Fly through the gate with Richard Feynman",
+        "options": [
+            "Wolfgang_Amadeus_Mozart.jpg",
+            "Albert_Einshtein.jpg",
+            "Richard_Feynman.jpg"
+        ],
+        "correct": 3,
+        "texture": "textures/room",
+        "gates": {
+            "gate_1": {
+                "size": "big",
+                "color": "green"
+            },
+            "gate_2": {
+                "size": "big",
+                "color": "red"
+            },
+            "gate_3": {
+                "size": "small",
+                "color": "blue"
+            }
+        }
+    },
+    {
+        "prompt": "Fly through the gate with Elvis Presley",
+        "options": [
+            "Oprah_Winfrey.jpg",
+            "Elvis_Presley.jpg",
+            "Isaac_Newton.jpg"
+        ],
+        "correct": 2,
+        "texture": "textures/room",
+        "gates": {
+            "gate_1": {
+                "size": "big",
+                "color": "blue"
+            },
+            "gate_2": {
+                "size": "small",
+                "color": "red"
+            },
+            "gate_3": {
+                "size": "big",
+                "color": "green"
+            }
+        }
+    },
+    {
+        "prompt": "Fly through the gate with Tom Holland",
+        "options": [
+            "Lionel_Messi.jpg",
+            "Ludwig_Van_Beethoven.jpg",
+            "Tom_Holland.jpg"
+        ],
+        "correct": 3,
+        "texture": "textures/room",
+        "gates": {
+            "gate_1": {
+                "size": "small",
+                "color": "blue"
+            },
+            "gate_2": {
+                "size": "small",
+                "color": "red"
+            },
+            "gate_3": {
+                "size": "big",
+                "color": "green"
+            }
+        }
+    },
+    {
+        "prompt": "Fly through the gate with Bill Gates",
+        "options": [
+            "Oprah_Winfrey.jpg",
+            "Bill_Gates.jpg",
+            "Vinicius_Junior.jpg"
+        ],
+        "correct": 2,
+        "texture": "textures/room",
+        "gates": {
+            "gate_1": {
+                "size": "small",
+                "color": "green"
+            },
+            "gate_2": {
+                "size": "big",
+                "color": "blue"
+            },
+            "gate_3": {
+                "size": "small",
+                "color": "red"
+            }
+        }
+    },
+    {
+        "prompt": "Fly through the gate with Ludwig Van Beethoven",
+        "options": [
+            "Ding_Liren.jpg",
+            "Nelson_Mandela.jpg",
+            "Ludwig_Van_Beethoven.jpg"
+        ],
+        "correct": 3,
+        "texture": "textures/room",
+        "gates": {
+            "gate_1": {
+                "size": "big",
+                "color": "green"
+            },
+            "gate_2": {
+                "size": "small",
+                "color": "red"
+            },
+            "gate_3": {
+                "size": "small",
+                "color": "blue"
+            }
+        }
+    }
+]
