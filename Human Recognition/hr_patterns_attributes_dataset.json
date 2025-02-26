@@ -1,0 +1,443 @@
+[
+    {
+        "prompt": "Fly through the gate with a person with an umbrella",
+        "options": [
+            "an_umbrella.jpg",
+            "a_scarf_around_their_neck.jpg",
+            "a_long_beard.jpg"
+        ],
+        "correct": 1
+    },
+    {
+        "prompt": "Fly through the gate with a person with a backpack",
+        "options": [
+            "gray_hair.jpg",
+            "a_hat.jpg",
+            "a_backpack.jpg"
+        ],
+        "correct": 3
+    },
+    {
+        "prompt": "Fly through the gate with a person with a bald head",
+        "options": [
+            "a_bald_head.jpg",
+            "dyed_hair.jpg",
+            "gloves.jpg"
+        ],
+        "correct": 1
+    },
+    {
+        "prompt": "Fly through the gate with a person with a beard",
+        "options": [
+            "a_dress.jpg",
+            "jeans.jpg",
+            "a_beard.jpg"
+        ],
+        "correct": 3
+    },
+    {
+        "prompt": "Fly through the gate with a person with a blazer",
+        "options": [
+            "a_suit.png",
+            "a_blazer.png",
+            "earrings.jpg"
+        ],
+        "correct": 2
+    },
+    {
+        "prompt": "Fly through the gate with a person with a cap",
+        "options": [
+            "a_cap.jpg",
+            "boots.jpg",
+            "a_piercing.jpeg"
+        ],
+        "correct": 1
+    },
+    {
+        "prompt": "Fly through the gate with a person with a coat",
+        "options": [
+            "long_hair.jpg",
+            "a_coat.jpg",
+            "a_long_beard.jpg"
+        ],
+        "correct": 2
+    },
+    {
+        "prompt": "Fly through the gate with a person with a crossbody bag",
+        "options": [
+            "boots.jpg",
+            "headphones.jpg",
+            "a_crossbody_bag.jpg"
+        ],
+        "correct": 3
+    },
+    {
+        "prompt": "Fly through the gate with a person with a dress",
+        "options": [
+            "a_skirt.jpg",
+            "a_dress.jpg",
+            "a_mole_on_their_face.jpeg"
+        ],
+        "correct": 2
+    },
+    {
+        "prompt": "Fly through the gate with a person with a hat",
+        "options": [
+            "the_sunglasses.jpg",
+            "a_hat.jpg",
+            "a_mole_on_their_face.jpeg"
+        ],
+        "correct": 2
+    },
+    {
+        "prompt": "Fly through the gate with a person with a long beard",
+        "options": [
+            "gray_hair.jpg",
+            "slippers.jpg",
+            "a_long_beard.jpg"
+        ],
+        "correct": 3
+    },
+    {
+        "prompt": "Fly through the gate with a person with a mole on their face",
+        "options": [
+            "a_coat.jpg",
+            "glasses_on_their_head.jpg",
+            "a_mole_on_their_face.jpeg"
+        ],
+        "correct": 3
+    },
+    {
+        "prompt": "Fly through the gate with a person with a piercing",
+        "options": [
+            "long_hair.jpg",
+            "gloves.jpg",
+            "a_piercing.jpeg"
+        ],
+        "correct": 3
+    },
+    {
+        "prompt": "Fly through the gate with a person with a ring on their finger",
+        "options": [
+            "a_backpack.jpg",
+            "braids.jpeg",
+            "a_ring_on_their_finger.jpg"
+        ],
+        "correct": 3
+    },
+    {
+        "prompt": "Fly through the gate with a person with a scarf around their neck",
+        "options": [
+            "a_scarf_around_their_neck.jpg",
+            "thick_eyebrows.jpeg",
+            "a_unibrow.jpg"
+        ],
+        "correct": 1
+    },
+    {
+        "prompt": "Fly through the gate with a person with a skirt",
+        "options": [
+            "long_nails.jpg",
+            "tall_height.jpg",
+            "a_skirt.jpg"
+        ],
+        "correct": 3
+    },
+    {
+        "prompt": "Fly through the gate with a person with a suit",
+        "options": [
+            "gloves.jpg",
+            "short_nails.jpeg",
+            "a_suit.png"
+        ],
+        "correct": 3
+    },
+    {
+        "prompt": "Fly through the gate with a person with a sweater",
+        "options": [
+            "a_sweater.jpg",
+            "a_watch_on_their_wrist.jpg",
+            "a_beard.jpg"
+        ],
+        "correct": 1
+    },
+    {
+        "prompt": "Fly through the gate with a person with a t-shirt",
+        "options": [
+            "short hair.jpg",
+            "tall_height.jpg",
+            "a_t-shirt.jpg"
+        ],
+        "correct": 3
+    },
+    {
+        "prompt": "Fly through the gate with a person with a tattoo",
+        "options": [
+            "jeans.jpg",
+            "a_tattoo.jpg",
+            "a_hat.jpg"
+        ],
+        "correct": 2
+    },
+    {
+        "prompt": "Fly through the gate with a person with a tie",
+        "options": [
+            "a_sweater.jpg",
+            "a_tie.jpg",
+            "sneakers.jpg"
+        ],
+        "correct": 2
+    },
+    {
+        "prompt": "Fly through the gate with a person with a unibrow",
+        "options": [
+            "a_unibrow.jpg",
+            "a_scarf_around_their_neck.jpg",
+            "an_umbrella.jpg"
+        ],
+        "correct": 1
+    },
+    {
+        "prompt": "Fly through the gate with a person with a vest",
+        "options": [
+            "dyed_hair.jpg",
+            "a_vest.jpg",
+            "shorts.jpg"
+        ],
+        "correct": 2
+    },
+    {
+        "prompt": "Fly through the gate with a person with a watch on their wrist",
+        "options": [
+            "a_watch_on_their_wrist.jpg",
+            "tall_height.jpg",
+            "a_vest.jpg"
+        ],
+        "correct": 1
+    },
+    {
+        "prompt": "Fly through the gate with a person with boots",
+        "options": [
+            "long_nails.jpg",
+            "boots.jpg",
+            "a_suit.png"
+        ],
+        "correct": 2
+    },
+    {
+        "prompt": "Fly through the gate with a person with braces",
+        "options": [
+            "braces.jpg",
+            "a_vest.jpg",
+            "a_tattoo.jpg"
+        ],
+        "correct": 1
+    },
+    {
+        "prompt": "Fly through the gate with a person with braids",
+        "options": [
+            "a_t-shirt.jpg",
+            "braids.jpeg",
+            "headphones.jpg"
+        ],
+        "correct": 2
+    },
+    {
+        "prompt": "Fly through the gate with a person with dress shoes",
+        "options": [
+            "dress_shoes.png",
+            "short_nails.jpeg",
+            "braids.jpeg"
+        ],
+        "correct": 1
+    },
+    {
+        "prompt": "Fly through the gate with a person with dyed hair",
+        "options": [
+            "a_backpack.jpg",
+            "dyed_hair.jpg",
+            "a_suit.png"
+        ],
+        "correct": 2
+    },
+    {
+        "prompt": "Fly through the gate with a person with earrings",
+        "options": [
+            "earrings.jpg",
+            "tall_height.jpg",
+            "a_vest.jpg"
+        ],
+        "correct": 1
+    },
+    {
+        "prompt": "Fly through the gate with a person with freckles",
+        "options": [
+            "glasses_on_their_head.jpg",
+            "long_hair.jpg",
+            "freckles.jpeg"
+        ],
+        "correct": 3
+    },
+    {
+        "prompt": "Fly through the gate with a person with glasses on their head",
+        "options": [
+            "a_suit.png",
+            "a_beard.jpg",
+            "glasses_on_their_head.jpg"
+        ],
+        "correct": 3
+    },
+    {
+        "prompt": "Fly through the gate with a person with gloves",
+        "options": [
+            "a_piercing.jpeg",
+            "gloves.jpg",
+            "sportswear.jpeg"
+        ],
+        "correct": 2
+    },
+    {
+        "prompt": "Fly through the gate with a person with gray hair",
+        "options": [
+            "a_backpack.jpg",
+            "dress_shoes.png",
+            "gray_hair.jpg"
+        ],
+        "correct": 3
+    },
+    {
+        "prompt": "Fly through the gate with a person with headphones",
+        "options": [
+            "a_hat.jpg",
+            "headphones.jpg",
+            "a_vest.jpg"
+        ],
+        "correct": 2
+    },
+    {
+        "prompt": "Fly through the gate with a person with jeans",
+        "options": [
+            "a_piercing.jpeg",
+            "earrings.jpg",
+            "jeans.jpg"
+        ],
+        "correct": 3
+    },
+    {
+        "prompt": "Fly through the gate with a person with long eyelashes",
+        "options": [
+            "a_mole_on_their_face.jpeg",
+            "a_backpack.jpg",
+            "long_eyelashes.jpeg"
+        ],
+        "correct": 3
+    },
+    {
+        "prompt": "Fly through the gate with a person with long hair",
+        "options": [
+            "gray_hair.jpg",
+            "thick_eyebrows.jpeg",
+            "long_hair.jpg"
+        ],
+        "correct": 3
+    },
+    {
+        "prompt": "Fly through the gate with a person with long nails",
+        "options": [
+            "a_hat.jpg",
+            "long_nails.jpg",
+            "thick_eyebrows.jpeg"
+        ],
+        "correct": 2
+    },
+    {
+        "prompt": "Fly through the gate with a person with short hair",
+        "options": [
+            "short hair.jpg",
+            "jeans.jpg",
+            "sneakers.jpg"
+        ],
+        "correct": 1
+    },
+    {
+        "prompt": "Fly through the gate with a person with short-sleeve shirt",
+        "options": [
+            "short-sleeve_shirt.jpg",
+            "a_long_beard.jpg",
+            "freckles.jpeg"
+        ],
+        "correct": 1
+    },
+    {
+        "prompt": "Fly through the gate with a person with shorts",
+        "options": [
+            "shorts.jpg",
+            "a_skirt.jpg",
+            "a_t-shirt.jpg"
+        ],
+        "correct": 1
+    },
+    {
+        "prompt": "Fly through the gate with a person with short nails",
+        "options": [
+            "short_nails.jpeg",
+            "a_cap.jpg",
+            "a_t-shirt.jpg"
+        ],
+        "correct": 1
+    },
+    {
+        "prompt": "Fly through the gate with a person with slippers",
+        "options": [
+            "a_watch_on_their_wrist.jpg",
+            "the_sunglasses.jpg",
+            "slippers.jpg"
+        ],
+        "correct": 3
+    },
+    {
+        "prompt": "Fly through the gate with a person with sneakers",
+        "options": [
+            "a_mole_on_their_face.jpeg",
+            "sneakers.jpg",
+            "a_skirt.jpg"
+        ],
+        "correct": 2
+    },
+    {
+        "prompt": "Fly through the gate with a person with sportswear",
+        "options": [
+            "long_nails.jpg",
+            "a_backpack.jpg",
+            "sportswear.jpeg"
+        ],
+        "correct": 3
+    },
+    {
+        "prompt": "Fly through the gate with a person with tall height",
+        "options": [
+            "tall_height.jpg",
+            "a_blazer.png",
+            "braids.jpeg"
+        ],
+        "correct": 1
+    },
+    {
+        "prompt": "Fly through the gate with a person with the sunglasses",
+        "options": [
+            "a_suit.png",
+            "a_crossbody_bag.jpg",
+            "the_sunglasses.jpg"
+        ],
+        "correct": 3
+    },
+    {
+        "prompt": "Fly through the gate with a person with thick eyebrows",
+        "options": [
+            "shorts.jpg",
+            "thick_eyebrows.jpeg",
+            "short_nails.jpeg"
+        ],
+        "correct": 2
+    }
+]
