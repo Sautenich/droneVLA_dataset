@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 4.3.2 commit date:2024-12-16, commit time:21:10, hash:32f5fdce0a0a</authoring_tool>
     </contributor>
-    <created>2025-02-25T17:40:14</created>
-    <modified>2025-02-25T17:40:14</modified>
+    <created>2025-02-28T20:43:48</created>
+    <modified>2025-02-28T20:43:48</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -64,16 +64,16 @@
     </light>
   </library_lights>
   <library_effects>
-    <effect id="with_freckles-effect">
+    <effect id="freckles-effect">
       <profile_COMMON>
-        <newparam sid="with_freckles_jpeg-surface">
+        <newparam sid="freckles_jpeg-surface">
           <surface type="2D">
-            <init_from>with_freckles_jpeg</init_from>
+            <init_from>freckles_jpeg</init_from>
           </surface>
         </newparam>
-        <newparam sid="with_freckles_jpeg-sampler">
+        <newparam sid="freckles_jpeg-sampler">
           <sampler2D>
-            <source>with_freckles_jpeg-surface</source>
+            <source>freckles_jpeg-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -82,7 +82,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="with_freckles_jpeg-sampler" texcoord="UVMap"/>
+              <texture texture="freckles_jpeg-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.5</float>
@@ -93,54 +93,54 @@
     </effect>
   </library_effects>
   <library_images>
-    <image id="with_freckles_jpeg" name="with_freckles_jpeg">
-      <init_from>with_freckles.jpeg</init_from>
+    <image id="freckles_jpeg" name="freckles_jpeg">
+      <init_from>freckles.jpeg</init_from>
     </image>
   </library_images>
   <library_materials>
-    <material id="with_freckles-material" name="with_freckles">
-      <instance_effect url="#with_freckles-effect"/>
+    <material id="freckles-material" name="freckles">
+      <instance_effect url="#freckles-effect"/>
     </material>
   </library_materials>
   <library_geometries>
-    <geometry id="with_freckles-mesh" name="with_freckles">
+    <geometry id="freckles-mesh" name="freckles">
       <mesh>
-        <source id="with_freckles-mesh-positions">
-          <float_array id="with_freckles-mesh-positions-array" count="12">-0.3333333 -0.5 0 0.3333333 -0.5 0 -0.3333333 0.5 0 0.3333333 0.5 0</float_array>
+        <source id="freckles-mesh-positions">
+          <float_array id="freckles-mesh-positions-array" count="12">-0.3333333 -0.5 0 0.3333333 -0.5 0 -0.3333333 0.5 0 0.3333333 0.5 0</float_array>
           <technique_common>
-            <accessor source="#with_freckles-mesh-positions-array" count="4" stride="3">
+            <accessor source="#freckles-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="with_freckles-mesh-normals">
-          <float_array id="with_freckles-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
+        <source id="freckles-mesh-normals">
+          <float_array id="freckles-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
           <technique_common>
-            <accessor source="#with_freckles-mesh-normals-array" count="2" stride="3">
+            <accessor source="#freckles-mesh-normals-array" count="2" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="with_freckles-mesh-map-0">
-          <float_array id="with_freckles-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
+        <source id="freckles-mesh-map-0">
+          <float_array id="freckles-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
           <technique_common>
-            <accessor source="#with_freckles-mesh-map-0-array" count="6" stride="2">
+            <accessor source="#freckles-mesh-map-0-array" count="6" stride="2">
               <param name="S" type="float"/>
               <param name="T" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <vertices id="with_freckles-mesh-vertices">
-          <input semantic="POSITION" source="#with_freckles-mesh-positions"/>
+        <vertices id="freckles-mesh-vertices">
+          <input semantic="POSITION" source="#freckles-mesh-positions"/>
         </vertices>
-        <triangles material="with_freckles-material" count="2">
-          <input semantic="VERTEX" source="#with_freckles-mesh-vertices" offset="0"/>
-          <input semantic="NORMAL" source="#with_freckles-mesh-normals" offset="1"/>
-          <input semantic="TEXCOORD" source="#with_freckles-mesh-map-0" offset="2" set="0"/>
+        <triangles material="freckles-material" count="2">
+          <input semantic="VERTEX" source="#freckles-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#freckles-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#freckles-mesh-map-0" offset="2" set="0"/>
           <p>1 0 0 2 0 1 0 0 2 1 1 3 3 1 4 2 1 5</p>
         </triangles>
       </mesh>
@@ -148,12 +148,12 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="with_freckles" name="with_freckles" type="NODE">
+      <node id="freckles" name="freckles" type="NODE">
         <matrix sid="transform">-4.37114e-8 4.37114e-8 1 0 1 1.91069e-15 4.37114e-8 0 0 1 -4.37114e-8 0 0 0 0 1</matrix>
-        <instance_geometry url="#with_freckles-mesh" name="with_freckles">
+        <instance_geometry url="#freckles-mesh" name="freckles">
           <bind_material>
             <technique_common>
-              <instance_material symbol="with_freckles-material" target="#with_freckles-material">
+              <instance_material symbol="freckles-material" target="#freckles-material">
                 <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
               </instance_material>
             </technique_common>

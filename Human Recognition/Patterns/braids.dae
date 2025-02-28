@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 4.3.2 commit date:2024-12-16, commit time:21:10, hash:32f5fdce0a0a</authoring_tool>
     </contributor>
-    <created>2025-02-25T17:38:07</created>
-    <modified>2025-02-25T17:38:07</modified>
+    <created>2025-02-28T20:40:59</created>
+    <modified>2025-02-28T20:40:59</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -64,16 +64,16 @@
     </light>
   </library_lights>
   <library_effects>
-    <effect id="with_braids-effect">
+    <effect id="braids-effect">
       <profile_COMMON>
-        <newparam sid="with_braids_jpeg-surface">
+        <newparam sid="braids_jpeg-surface">
           <surface type="2D">
-            <init_from>with_braids_jpeg</init_from>
+            <init_from>braids_jpeg</init_from>
           </surface>
         </newparam>
-        <newparam sid="with_braids_jpeg-sampler">
+        <newparam sid="braids_jpeg-sampler">
           <sampler2D>
-            <source>with_braids_jpeg-surface</source>
+            <source>braids_jpeg-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -82,7 +82,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="with_braids_jpeg-sampler" texcoord="UVMap"/>
+              <texture texture="braids_jpeg-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.5</float>
@@ -93,54 +93,54 @@
     </effect>
   </library_effects>
   <library_images>
-    <image id="with_braids_jpeg" name="with_braids_jpeg">
-      <init_from>with_braids.jpeg</init_from>
+    <image id="braids_jpeg" name="braids_jpeg">
+      <init_from>braids.jpeg</init_from>
     </image>
   </library_images>
   <library_materials>
-    <material id="with_braids-material" name="with_braids">
-      <instance_effect url="#with_braids-effect"/>
+    <material id="braids-material" name="braids">
+      <instance_effect url="#braids-effect"/>
     </material>
   </library_materials>
   <library_geometries>
-    <geometry id="with_braids-mesh" name="with_braids">
+    <geometry id="braids-mesh" name="braids">
       <mesh>
-        <source id="with_braids-mesh-positions">
-          <float_array id="with_braids-mesh-positions-array" count="12">-0.6666667 -0.5 0 0.6666667 -0.5 0 -0.6666667 0.5 0 0.6666667 0.5 0</float_array>
+        <source id="braids-mesh-positions">
+          <float_array id="braids-mesh-positions-array" count="12">-0.6666667 -0.5 0 0.6666667 -0.5 0 -0.6666667 0.5 0 0.6666667 0.5 0</float_array>
           <technique_common>
-            <accessor source="#with_braids-mesh-positions-array" count="4" stride="3">
+            <accessor source="#braids-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="with_braids-mesh-normals">
-          <float_array id="with_braids-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
+        <source id="braids-mesh-normals">
+          <float_array id="braids-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
           <technique_common>
-            <accessor source="#with_braids-mesh-normals-array" count="2" stride="3">
+            <accessor source="#braids-mesh-normals-array" count="2" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="with_braids-mesh-map-0">
-          <float_array id="with_braids-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
+        <source id="braids-mesh-map-0">
+          <float_array id="braids-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
           <technique_common>
-            <accessor source="#with_braids-mesh-map-0-array" count="6" stride="2">
+            <accessor source="#braids-mesh-map-0-array" count="6" stride="2">
               <param name="S" type="float"/>
               <param name="T" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <vertices id="with_braids-mesh-vertices">
-          <input semantic="POSITION" source="#with_braids-mesh-positions"/>
+        <vertices id="braids-mesh-vertices">
+          <input semantic="POSITION" source="#braids-mesh-positions"/>
         </vertices>
-        <triangles material="with_braids-material" count="2">
-          <input semantic="VERTEX" source="#with_braids-mesh-vertices" offset="0"/>
-          <input semantic="NORMAL" source="#with_braids-mesh-normals" offset="1"/>
-          <input semantic="TEXCOORD" source="#with_braids-mesh-map-0" offset="2" set="0"/>
+        <triangles material="braids-material" count="2">
+          <input semantic="VERTEX" source="#braids-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#braids-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#braids-mesh-map-0" offset="2" set="0"/>
           <p>1 0 0 2 0 1 0 0 2 1 1 3 3 1 4 2 1 5</p>
         </triangles>
       </mesh>
@@ -148,12 +148,12 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="with_braids" name="with_braids" type="NODE">
+      <node id="braids" name="braids" type="NODE">
         <matrix sid="transform">-4.37114e-8 4.37114e-8 1 0 1 1.91069e-15 4.37114e-8 0 0 1 -4.37114e-8 0 0 0 0 1</matrix>
-        <instance_geometry url="#with_braids-mesh" name="with_braids">
+        <instance_geometry url="#braids-mesh" name="braids">
           <bind_material>
             <technique_common>
-              <instance_material symbol="with_braids-material" target="#with_braids-material">
+              <instance_material symbol="braids-material" target="#braids-material">
                 <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
               </instance_material>
             </technique_common>

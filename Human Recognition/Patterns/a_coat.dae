@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 4.3.2 commit date:2024-12-16, commit time:21:10, hash:32f5fdce0a0a</authoring_tool>
     </contributor>
-    <created>2025-02-25T17:11:01</created>
-    <modified>2025-02-25T17:11:01</modified>
+    <created>2025-02-28T21:04:54</created>
+    <modified>2025-02-28T21:04:54</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -64,16 +64,16 @@
     </light>
   </library_lights>
   <library_effects>
-    <effect id="in_a_coat-effect">
+    <effect id="a_coat-effect">
       <profile_COMMON>
-        <newparam sid="in_a_coat_jpg-surface">
+        <newparam sid="a_coat_jpg-surface">
           <surface type="2D">
-            <init_from>in_a_coat_jpg</init_from>
+            <init_from>a_coat_jpg</init_from>
           </surface>
         </newparam>
-        <newparam sid="in_a_coat_jpg-sampler">
+        <newparam sid="a_coat_jpg-sampler">
           <sampler2D>
-            <source>in_a_coat_jpg-surface</source>
+            <source>a_coat_jpg-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -82,7 +82,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="in_a_coat_jpg-sampler" texcoord="UVMap"/>
+              <texture texture="a_coat_jpg-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.5</float>
@@ -93,54 +93,54 @@
     </effect>
   </library_effects>
   <library_images>
-    <image id="in_a_coat_jpg" name="in_a_coat_jpg">
-      <init_from>in_a_coat.jpg</init_from>
+    <image id="a_coat_jpg" name="a_coat_jpg">
+      <init_from>a_coat.jpg</init_from>
     </image>
   </library_images>
   <library_materials>
-    <material id="in_a_coat-material" name="in_a_coat">
-      <instance_effect url="#in_a_coat-effect"/>
+    <material id="a_coat-material" name="a_coat">
+      <instance_effect url="#a_coat-effect"/>
     </material>
   </library_materials>
   <library_geometries>
-    <geometry id="in_a_coat-mesh" name="in_a_coat">
+    <geometry id="a_coat-mesh" name="a_coat">
       <mesh>
-        <source id="in_a_coat-mesh-positions">
-          <float_array id="in_a_coat-mesh-positions-array" count="12">-0.75 -0.5 0 0.75 -0.5 0 -0.75 0.5 0 0.75 0.5 0</float_array>
+        <source id="a_coat-mesh-positions">
+          <float_array id="a_coat-mesh-positions-array" count="12">-0.75 -0.5 0 0.75 -0.5 0 -0.75 0.5 0 0.75 0.5 0</float_array>
           <technique_common>
-            <accessor source="#in_a_coat-mesh-positions-array" count="4" stride="3">
+            <accessor source="#a_coat-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="in_a_coat-mesh-normals">
-          <float_array id="in_a_coat-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
+        <source id="a_coat-mesh-normals">
+          <float_array id="a_coat-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
           <technique_common>
-            <accessor source="#in_a_coat-mesh-normals-array" count="2" stride="3">
+            <accessor source="#a_coat-mesh-normals-array" count="2" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="in_a_coat-mesh-map-0">
-          <float_array id="in_a_coat-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
+        <source id="a_coat-mesh-map-0">
+          <float_array id="a_coat-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
           <technique_common>
-            <accessor source="#in_a_coat-mesh-map-0-array" count="6" stride="2">
+            <accessor source="#a_coat-mesh-map-0-array" count="6" stride="2">
               <param name="S" type="float"/>
               <param name="T" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <vertices id="in_a_coat-mesh-vertices">
-          <input semantic="POSITION" source="#in_a_coat-mesh-positions"/>
+        <vertices id="a_coat-mesh-vertices">
+          <input semantic="POSITION" source="#a_coat-mesh-positions"/>
         </vertices>
-        <triangles material="in_a_coat-material" count="2">
-          <input semantic="VERTEX" source="#in_a_coat-mesh-vertices" offset="0"/>
-          <input semantic="NORMAL" source="#in_a_coat-mesh-normals" offset="1"/>
-          <input semantic="TEXCOORD" source="#in_a_coat-mesh-map-0" offset="2" set="0"/>
+        <triangles material="a_coat-material" count="2">
+          <input semantic="VERTEX" source="#a_coat-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#a_coat-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#a_coat-mesh-map-0" offset="2" set="0"/>
           <p>1 0 0 2 0 1 0 0 2 1 1 3 3 1 4 2 1 5</p>
         </triangles>
       </mesh>
@@ -148,12 +148,12 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="in_a_coat" name="in_a_coat" type="NODE">
+      <node id="a_coat" name="a_coat" type="NODE">
         <matrix sid="transform">-4.37114e-8 4.37114e-8 1 0 1 1.91069e-15 4.37114e-8 0 0 1 -4.37114e-8 0 0 0 0 1</matrix>
-        <instance_geometry url="#in_a_coat-mesh" name="in_a_coat">
+        <instance_geometry url="#a_coat-mesh" name="a_coat">
           <bind_material>
             <technique_common>
-              <instance_material symbol="in_a_coat-material" target="#in_a_coat-material">
+              <instance_material symbol="a_coat-material" target="#a_coat-material">
                 <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
               </instance_material>
             </technique_common>

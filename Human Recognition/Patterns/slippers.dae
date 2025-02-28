@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 4.3.2 commit date:2024-12-16, commit time:21:10, hash:32f5fdce0a0a</authoring_tool>
     </contributor>
-    <created>2025-02-25T17:28:14</created>
-    <modified>2025-02-25T17:28:14</modified>
+    <created>2025-02-28T20:50:40</created>
+    <modified>2025-02-28T20:50:40</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -64,16 +64,16 @@
     </light>
   </library_lights>
   <library_effects>
-    <effect id="in_slippers-effect">
+    <effect id="slippers-effect">
       <profile_COMMON>
-        <newparam sid="in_slippers_jpg-surface">
+        <newparam sid="slippers_jpg-surface">
           <surface type="2D">
-            <init_from>in_slippers_jpg</init_from>
+            <init_from>slippers_jpg</init_from>
           </surface>
         </newparam>
-        <newparam sid="in_slippers_jpg-sampler">
+        <newparam sid="slippers_jpg-sampler">
           <sampler2D>
-            <source>in_slippers_jpg-surface</source>
+            <source>slippers_jpg-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -82,7 +82,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="in_slippers_jpg-sampler" texcoord="UVMap"/>
+              <texture texture="slippers_jpg-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.5</float>
@@ -93,54 +93,54 @@
     </effect>
   </library_effects>
   <library_images>
-    <image id="in_slippers_jpg" name="in_slippers_jpg">
-      <init_from>in_slippers.jpg</init_from>
+    <image id="slippers_jpg" name="slippers_jpg">
+      <init_from>slippers.jpg</init_from>
     </image>
   </library_images>
   <library_materials>
-    <material id="in_slippers-material" name="in_slippers">
-      <instance_effect url="#in_slippers-effect"/>
+    <material id="slippers-material" name="slippers">
+      <instance_effect url="#slippers-effect"/>
     </material>
   </library_materials>
   <library_geometries>
-    <geometry id="in_slippers-mesh" name="in_slippers">
+    <geometry id="slippers-mesh" name="slippers">
       <mesh>
-        <source id="in_slippers-mesh-positions">
-          <float_array id="in_slippers-mesh-positions-array" count="12">-0.3333333 -0.5 0 0.3333333 -0.5 0 -0.3333333 0.5 0 0.3333333 0.5 0</float_array>
+        <source id="slippers-mesh-positions">
+          <float_array id="slippers-mesh-positions-array" count="12">-0.3333333 -0.5 0 0.3333333 -0.5 0 -0.3333333 0.5 0 0.3333333 0.5 0</float_array>
           <technique_common>
-            <accessor source="#in_slippers-mesh-positions-array" count="4" stride="3">
+            <accessor source="#slippers-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="in_slippers-mesh-normals">
-          <float_array id="in_slippers-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
+        <source id="slippers-mesh-normals">
+          <float_array id="slippers-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
           <technique_common>
-            <accessor source="#in_slippers-mesh-normals-array" count="2" stride="3">
+            <accessor source="#slippers-mesh-normals-array" count="2" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="in_slippers-mesh-map-0">
-          <float_array id="in_slippers-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
+        <source id="slippers-mesh-map-0">
+          <float_array id="slippers-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
           <technique_common>
-            <accessor source="#in_slippers-mesh-map-0-array" count="6" stride="2">
+            <accessor source="#slippers-mesh-map-0-array" count="6" stride="2">
               <param name="S" type="float"/>
               <param name="T" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <vertices id="in_slippers-mesh-vertices">
-          <input semantic="POSITION" source="#in_slippers-mesh-positions"/>
+        <vertices id="slippers-mesh-vertices">
+          <input semantic="POSITION" source="#slippers-mesh-positions"/>
         </vertices>
-        <triangles material="in_slippers-material" count="2">
-          <input semantic="VERTEX" source="#in_slippers-mesh-vertices" offset="0"/>
-          <input semantic="NORMAL" source="#in_slippers-mesh-normals" offset="1"/>
-          <input semantic="TEXCOORD" source="#in_slippers-mesh-map-0" offset="2" set="0"/>
+        <triangles material="slippers-material" count="2">
+          <input semantic="VERTEX" source="#slippers-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#slippers-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#slippers-mesh-map-0" offset="2" set="0"/>
           <p>1 0 0 2 0 1 0 0 2 1 1 3 3 1 4 2 1 5</p>
         </triangles>
       </mesh>
@@ -148,12 +148,12 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="in_slippers" name="in_slippers" type="NODE">
+      <node id="slippers" name="slippers" type="NODE">
         <matrix sid="transform">-4.37114e-8 4.37114e-8 1 0 1 1.91069e-15 4.37114e-8 0 0 1 -4.37114e-8 0 0 0 0 1</matrix>
-        <instance_geometry url="#in_slippers-mesh" name="in_slippers">
+        <instance_geometry url="#slippers-mesh" name="slippers">
           <bind_material>
             <technique_common>
-              <instance_material symbol="in_slippers-material" target="#in_slippers-material">
+              <instance_material symbol="slippers-material" target="#slippers-material">
                 <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
               </instance_material>
             </technique_common>

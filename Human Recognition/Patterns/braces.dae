@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 4.3.2 commit date:2024-12-16, commit time:21:10, hash:32f5fdce0a0a</authoring_tool>
     </contributor>
-    <created>2025-02-25T17:37:48</created>
-    <modified>2025-02-25T17:37:48</modified>
+    <created>2025-02-28T20:40:32</created>
+    <modified>2025-02-28T20:40:32</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -64,16 +64,16 @@
     </light>
   </library_lights>
   <library_effects>
-    <effect id="with_braces-effect">
+    <effect id="braces-effect">
       <profile_COMMON>
-        <newparam sid="with_braces_jpg-surface">
+        <newparam sid="braces_jpg-surface">
           <surface type="2D">
-            <init_from>with_braces_jpg</init_from>
+            <init_from>braces_jpg</init_from>
           </surface>
         </newparam>
-        <newparam sid="with_braces_jpg-sampler">
+        <newparam sid="braces_jpg-sampler">
           <sampler2D>
-            <source>with_braces_jpg-surface</source>
+            <source>braces_jpg-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -82,7 +82,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="with_braces_jpg-sampler" texcoord="UVMap"/>
+              <texture texture="braces_jpg-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.5</float>
@@ -93,54 +93,54 @@
     </effect>
   </library_effects>
   <library_images>
-    <image id="with_braces_jpg" name="with_braces_jpg">
-      <init_from>with_braces.jpg</init_from>
+    <image id="braces_jpg" name="braces_jpg">
+      <init_from>braces.jpg</init_from>
     </image>
   </library_images>
   <library_materials>
-    <material id="with_braces-material" name="with_braces">
-      <instance_effect url="#with_braces-effect"/>
+    <material id="braces-material" name="braces">
+      <instance_effect url="#braces-effect"/>
     </material>
   </library_materials>
   <library_geometries>
-    <geometry id="with_braces-mesh" name="with_braces">
+    <geometry id="braces-mesh" name="braces">
       <mesh>
-        <source id="with_braces-mesh-positions">
-          <float_array id="with_braces-mesh-positions-array" count="12">-0.5763636 -0.5 0 0.5763636 -0.5 0 -0.5763636 0.5 0 0.5763636 0.5 0</float_array>
+        <source id="braces-mesh-positions">
+          <float_array id="braces-mesh-positions-array" count="12">-0.5763636 -0.5 0 0.5763636 -0.5 0 -0.5763636 0.5 0 0.5763636 0.5 0</float_array>
           <technique_common>
-            <accessor source="#with_braces-mesh-positions-array" count="4" stride="3">
+            <accessor source="#braces-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="with_braces-mesh-normals">
-          <float_array id="with_braces-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
+        <source id="braces-mesh-normals">
+          <float_array id="braces-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
           <technique_common>
-            <accessor source="#with_braces-mesh-normals-array" count="2" stride="3">
+            <accessor source="#braces-mesh-normals-array" count="2" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="with_braces-mesh-map-0">
-          <float_array id="with_braces-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
+        <source id="braces-mesh-map-0">
+          <float_array id="braces-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
           <technique_common>
-            <accessor source="#with_braces-mesh-map-0-array" count="6" stride="2">
+            <accessor source="#braces-mesh-map-0-array" count="6" stride="2">
               <param name="S" type="float"/>
               <param name="T" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <vertices id="with_braces-mesh-vertices">
-          <input semantic="POSITION" source="#with_braces-mesh-positions"/>
+        <vertices id="braces-mesh-vertices">
+          <input semantic="POSITION" source="#braces-mesh-positions"/>
         </vertices>
-        <triangles material="with_braces-material" count="2">
-          <input semantic="VERTEX" source="#with_braces-mesh-vertices" offset="0"/>
-          <input semantic="NORMAL" source="#with_braces-mesh-normals" offset="1"/>
-          <input semantic="TEXCOORD" source="#with_braces-mesh-map-0" offset="2" set="0"/>
+        <triangles material="braces-material" count="2">
+          <input semantic="VERTEX" source="#braces-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#braces-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#braces-mesh-map-0" offset="2" set="0"/>
           <p>1 0 0 2 0 1 0 0 2 1 1 3 3 1 4 2 1 5</p>
         </triangles>
       </mesh>
@@ -148,12 +148,12 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="with_braces" name="with_braces" type="NODE">
+      <node id="braces" name="braces" type="NODE">
         <matrix sid="transform">-4.37114e-8 4.37114e-8 1 0 1 1.91069e-15 4.37114e-8 0 0 1 -4.37114e-8 0 0 0 0 1</matrix>
-        <instance_geometry url="#with_braces-mesh" name="with_braces">
+        <instance_geometry url="#braces-mesh" name="braces">
           <bind_material>
             <technique_common>
-              <instance_material symbol="with_braces-material" target="#with_braces-material">
+              <instance_material symbol="braces-material" target="#braces-material">
                 <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
               </instance_material>
             </technique_common>

@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 4.3.2 commit date:2024-12-16, commit time:21:10, hash:32f5fdce0a0a</authoring_tool>
     </contributor>
-    <created>2025-02-25T17:28:55</created>
-    <modified>2025-02-25T17:28:55</modified>
+    <created>2025-02-28T20:51:05</created>
+    <modified>2025-02-28T20:51:05</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -64,16 +64,16 @@
     </light>
   </library_lights>
   <library_effects>
-    <effect id="in_sneakers-effect">
+    <effect id="sneakers-effect">
       <profile_COMMON>
-        <newparam sid="in_sneakers_jpg-surface">
+        <newparam sid="sneakers_jpg-surface">
           <surface type="2D">
-            <init_from>in_sneakers_jpg</init_from>
+            <init_from>sneakers_jpg</init_from>
           </surface>
         </newparam>
-        <newparam sid="in_sneakers_jpg-sampler">
+        <newparam sid="sneakers_jpg-sampler">
           <sampler2D>
-            <source>in_sneakers_jpg-surface</source>
+            <source>sneakers_jpg-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -82,7 +82,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="in_sneakers_jpg-sampler" texcoord="UVMap"/>
+              <texture texture="sneakers_jpg-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.5</float>
@@ -93,54 +93,54 @@
     </effect>
   </library_effects>
   <library_images>
-    <image id="in_sneakers_jpg" name="in_sneakers_jpg">
-      <init_from>in_sneakers.jpg</init_from>
+    <image id="sneakers_jpg" name="sneakers_jpg">
+      <init_from>sneakers.jpg</init_from>
     </image>
   </library_images>
   <library_materials>
-    <material id="in_sneakers-material" name="in_sneakers">
-      <instance_effect url="#in_sneakers-effect"/>
+    <material id="sneakers-material" name="sneakers">
+      <instance_effect url="#sneakers-effect"/>
     </material>
   </library_materials>
   <library_geometries>
-    <geometry id="in_sneakers-mesh" name="in_sneakers">
+    <geometry id="sneakers-mesh" name="sneakers">
       <mesh>
-        <source id="in_sneakers-mesh-positions">
-          <float_array id="in_sneakers-mesh-positions-array" count="12">-0.7486111 -0.5 0 0.7486111 -0.5 0 -0.7486111 0.5 0 0.7486111 0.5 0</float_array>
+        <source id="sneakers-mesh-positions">
+          <float_array id="sneakers-mesh-positions-array" count="12">-0.7486111 -0.5 0 0.7486111 -0.5 0 -0.7486111 0.5 0 0.7486111 0.5 0</float_array>
           <technique_common>
-            <accessor source="#in_sneakers-mesh-positions-array" count="4" stride="3">
+            <accessor source="#sneakers-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="in_sneakers-mesh-normals">
-          <float_array id="in_sneakers-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
+        <source id="sneakers-mesh-normals">
+          <float_array id="sneakers-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
           <technique_common>
-            <accessor source="#in_sneakers-mesh-normals-array" count="2" stride="3">
+            <accessor source="#sneakers-mesh-normals-array" count="2" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="in_sneakers-mesh-map-0">
-          <float_array id="in_sneakers-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
+        <source id="sneakers-mesh-map-0">
+          <float_array id="sneakers-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
           <technique_common>
-            <accessor source="#in_sneakers-mesh-map-0-array" count="6" stride="2">
+            <accessor source="#sneakers-mesh-map-0-array" count="6" stride="2">
               <param name="S" type="float"/>
               <param name="T" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <vertices id="in_sneakers-mesh-vertices">
-          <input semantic="POSITION" source="#in_sneakers-mesh-positions"/>
+        <vertices id="sneakers-mesh-vertices">
+          <input semantic="POSITION" source="#sneakers-mesh-positions"/>
         </vertices>
-        <triangles material="in_sneakers-material" count="2">
-          <input semantic="VERTEX" source="#in_sneakers-mesh-vertices" offset="0"/>
-          <input semantic="NORMAL" source="#in_sneakers-mesh-normals" offset="1"/>
-          <input semantic="TEXCOORD" source="#in_sneakers-mesh-map-0" offset="2" set="0"/>
+        <triangles material="sneakers-material" count="2">
+          <input semantic="VERTEX" source="#sneakers-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#sneakers-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#sneakers-mesh-map-0" offset="2" set="0"/>
           <p>1 0 0 2 0 1 0 0 2 1 1 3 3 1 4 2 1 5</p>
         </triangles>
       </mesh>
@@ -148,12 +148,12 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="in_sneakers" name="in_sneakers" type="NODE">
+      <node id="sneakers" name="sneakers" type="NODE">
         <matrix sid="transform">-4.37114e-8 4.37114e-8 1 0 1 1.91069e-15 4.37114e-8 0 0 1 -4.37114e-8 0 0 0 0 1</matrix>
-        <instance_geometry url="#in_sneakers-mesh" name="in_sneakers">
+        <instance_geometry url="#sneakers-mesh" name="sneakers">
           <bind_material>
             <technique_common>
-              <instance_material symbol="in_sneakers-material" target="#in_sneakers-material">
+              <instance_material symbol="sneakers-material" target="#sneakers-material">
                 <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
               </instance_material>
             </technique_common>

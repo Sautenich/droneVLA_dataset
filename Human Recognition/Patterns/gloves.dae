@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 4.3.2 commit date:2024-12-16, commit time:21:10, hash:32f5fdce0a0a</authoring_tool>
     </contributor>
-    <created>2025-02-25T17:41:51</created>
-    <modified>2025-02-25T17:41:51</modified>
+    <created>2025-02-28T20:44:58</created>
+    <modified>2025-02-28T20:44:58</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -64,16 +64,16 @@
     </light>
   </library_lights>
   <library_effects>
-    <effect id="with_gloves-effect">
+    <effect id="gloves-effect">
       <profile_COMMON>
-        <newparam sid="with_gloves_jpg-surface">
+        <newparam sid="gloves_jpg-surface">
           <surface type="2D">
-            <init_from>with_gloves_jpg</init_from>
+            <init_from>gloves_jpg</init_from>
           </surface>
         </newparam>
-        <newparam sid="with_gloves_jpg-sampler">
+        <newparam sid="gloves_jpg-sampler">
           <sampler2D>
-            <source>with_gloves_jpg-surface</source>
+            <source>gloves_jpg-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -82,7 +82,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="with_gloves_jpg-sampler" texcoord="UVMap"/>
+              <texture texture="gloves_jpg-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.5</float>
@@ -93,54 +93,54 @@
     </effect>
   </library_effects>
   <library_images>
-    <image id="with_gloves_jpg" name="with_gloves_jpg">
-      <init_from>with_gloves.jpg</init_from>
+    <image id="gloves_jpg" name="gloves_jpg">
+      <init_from>gloves.jpg</init_from>
     </image>
   </library_images>
   <library_materials>
-    <material id="with_gloves-material" name="with_gloves">
-      <instance_effect url="#with_gloves-effect"/>
+    <material id="gloves-material" name="gloves">
+      <instance_effect url="#gloves-effect"/>
     </material>
   </library_materials>
   <library_geometries>
-    <geometry id="with_gloves-mesh" name="with_gloves">
+    <geometry id="gloves-mesh" name="gloves">
       <mesh>
-        <source id="with_gloves-mesh-positions">
-          <float_array id="with_gloves-mesh-positions-array" count="12">-0.6666667 -0.5 0 0.6666667 -0.5 0 -0.6666667 0.5 0 0.6666667 0.5 0</float_array>
+        <source id="gloves-mesh-positions">
+          <float_array id="gloves-mesh-positions-array" count="12">-0.6666667 -0.5 0 0.6666667 -0.5 0 -0.6666667 0.5 0 0.6666667 0.5 0</float_array>
           <technique_common>
-            <accessor source="#with_gloves-mesh-positions-array" count="4" stride="3">
+            <accessor source="#gloves-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="with_gloves-mesh-normals">
-          <float_array id="with_gloves-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
+        <source id="gloves-mesh-normals">
+          <float_array id="gloves-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
           <technique_common>
-            <accessor source="#with_gloves-mesh-normals-array" count="2" stride="3">
+            <accessor source="#gloves-mesh-normals-array" count="2" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="with_gloves-mesh-map-0">
-          <float_array id="with_gloves-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
+        <source id="gloves-mesh-map-0">
+          <float_array id="gloves-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
           <technique_common>
-            <accessor source="#with_gloves-mesh-map-0-array" count="6" stride="2">
+            <accessor source="#gloves-mesh-map-0-array" count="6" stride="2">
               <param name="S" type="float"/>
               <param name="T" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <vertices id="with_gloves-mesh-vertices">
-          <input semantic="POSITION" source="#with_gloves-mesh-positions"/>
+        <vertices id="gloves-mesh-vertices">
+          <input semantic="POSITION" source="#gloves-mesh-positions"/>
         </vertices>
-        <triangles material="with_gloves-material" count="2">
-          <input semantic="VERTEX" source="#with_gloves-mesh-vertices" offset="0"/>
-          <input semantic="NORMAL" source="#with_gloves-mesh-normals" offset="1"/>
-          <input semantic="TEXCOORD" source="#with_gloves-mesh-map-0" offset="2" set="0"/>
+        <triangles material="gloves-material" count="2">
+          <input semantic="VERTEX" source="#gloves-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gloves-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gloves-mesh-map-0" offset="2" set="0"/>
           <p>1 0 0 2 0 1 0 0 2 1 1 3 3 1 4 2 1 5</p>
         </triangles>
       </mesh>
@@ -148,12 +148,12 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="with_gloves" name="with_gloves" type="NODE">
+      <node id="gloves" name="gloves" type="NODE">
         <matrix sid="transform">-4.37114e-8 4.37114e-8 1 0 1 1.91069e-15 4.37114e-8 0 0 1 -4.37114e-8 0 0 0 0 1</matrix>
-        <instance_geometry url="#with_gloves-mesh" name="with_gloves">
+        <instance_geometry url="#gloves-mesh" name="gloves">
           <bind_material>
             <technique_common>
-              <instance_material symbol="with_gloves-material" target="#with_gloves-material">
+              <instance_material symbol="gloves-material" target="#gloves-material">
                 <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
               </instance_material>
             </technique_common>

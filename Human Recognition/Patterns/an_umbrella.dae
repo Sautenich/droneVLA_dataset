@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 4.3.2 commit date:2024-12-16, commit time:21:10, hash:32f5fdce0a0a</authoring_tool>
     </contributor>
-    <created>2025-02-25T17:37:07</created>
-    <modified>2025-02-25T17:37:07</modified>
+    <created>2025-02-28T20:39:09</created>
+    <modified>2025-02-28T20:39:09</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -64,16 +64,16 @@
     </light>
   </library_lights>
   <library_effects>
-    <effect id="with_an_umbrella-effect">
+    <effect id="an_umbrella-effect">
       <profile_COMMON>
-        <newparam sid="with_an_umbrella_jpg-surface">
+        <newparam sid="an_umbrella_jpg-surface">
           <surface type="2D">
-            <init_from>with_an_umbrella_jpg</init_from>
+            <init_from>an_umbrella_jpg</init_from>
           </surface>
         </newparam>
-        <newparam sid="with_an_umbrella_jpg-sampler">
+        <newparam sid="an_umbrella_jpg-sampler">
           <sampler2D>
-            <source>with_an_umbrella_jpg-surface</source>
+            <source>an_umbrella_jpg-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -82,7 +82,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="with_an_umbrella_jpg-sampler" texcoord="UVMap"/>
+              <texture texture="an_umbrella_jpg-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.5</float>
@@ -93,54 +93,54 @@
     </effect>
   </library_effects>
   <library_images>
-    <image id="with_an_umbrella_jpg" name="with_an_umbrella_jpg">
-      <init_from>with_an_umbrella.jpg</init_from>
+    <image id="an_umbrella_jpg" name="an_umbrella_jpg">
+      <init_from>an_umbrella.jpg</init_from>
     </image>
   </library_images>
   <library_materials>
-    <material id="with_an_umbrella-material" name="with_an_umbrella">
-      <instance_effect url="#with_an_umbrella-effect"/>
+    <material id="an_umbrella-material" name="an_umbrella">
+      <instance_effect url="#an_umbrella-effect"/>
     </material>
   </library_materials>
   <library_geometries>
-    <geometry id="with_an_umbrella-mesh" name="with_an_umbrella">
+    <geometry id="an_umbrella-mesh" name="an_umbrella">
       <mesh>
-        <source id="with_an_umbrella-mesh-positions">
-          <float_array id="with_an_umbrella-mesh-positions-array" count="12">-0.3333333 -0.5 0 0.3333333 -0.5 0 -0.3333333 0.5 0 0.3333333 0.5 0</float_array>
+        <source id="an_umbrella-mesh-positions">
+          <float_array id="an_umbrella-mesh-positions-array" count="12">-0.3333333 -0.5 0 0.3333333 -0.5 0 -0.3333333 0.5 0 0.3333333 0.5 0</float_array>
           <technique_common>
-            <accessor source="#with_an_umbrella-mesh-positions-array" count="4" stride="3">
+            <accessor source="#an_umbrella-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="with_an_umbrella-mesh-normals">
-          <float_array id="with_an_umbrella-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
+        <source id="an_umbrella-mesh-normals">
+          <float_array id="an_umbrella-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
           <technique_common>
-            <accessor source="#with_an_umbrella-mesh-normals-array" count="2" stride="3">
+            <accessor source="#an_umbrella-mesh-normals-array" count="2" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="with_an_umbrella-mesh-map-0">
-          <float_array id="with_an_umbrella-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
+        <source id="an_umbrella-mesh-map-0">
+          <float_array id="an_umbrella-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
           <technique_common>
-            <accessor source="#with_an_umbrella-mesh-map-0-array" count="6" stride="2">
+            <accessor source="#an_umbrella-mesh-map-0-array" count="6" stride="2">
               <param name="S" type="float"/>
               <param name="T" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <vertices id="with_an_umbrella-mesh-vertices">
-          <input semantic="POSITION" source="#with_an_umbrella-mesh-positions"/>
+        <vertices id="an_umbrella-mesh-vertices">
+          <input semantic="POSITION" source="#an_umbrella-mesh-positions"/>
         </vertices>
-        <triangles material="with_an_umbrella-material" count="2">
-          <input semantic="VERTEX" source="#with_an_umbrella-mesh-vertices" offset="0"/>
-          <input semantic="NORMAL" source="#with_an_umbrella-mesh-normals" offset="1"/>
-          <input semantic="TEXCOORD" source="#with_an_umbrella-mesh-map-0" offset="2" set="0"/>
+        <triangles material="an_umbrella-material" count="2">
+          <input semantic="VERTEX" source="#an_umbrella-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#an_umbrella-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#an_umbrella-mesh-map-0" offset="2" set="0"/>
           <p>1 0 0 2 0 1 0 0 2 1 1 3 3 1 4 2 1 5</p>
         </triangles>
       </mesh>
@@ -148,12 +148,12 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="with_an_umbrella" name="with_an_umbrella" type="NODE">
+      <node id="an_umbrella" name="an_umbrella" type="NODE">
         <matrix sid="transform">-4.37114e-8 4.37114e-8 1 0 1 1.91069e-15 4.37114e-8 0 0 1 -4.37114e-8 0 0 0 0 1</matrix>
-        <instance_geometry url="#with_an_umbrella-mesh" name="with_an_umbrella">
+        <instance_geometry url="#an_umbrella-mesh" name="an_umbrella">
           <bind_material>
             <technique_common>
-              <instance_material symbol="with_an_umbrella-material" target="#with_an_umbrella-material">
+              <instance_material symbol="an_umbrella-material" target="#an_umbrella-material">
                 <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
               </instance_material>
             </technique_common>

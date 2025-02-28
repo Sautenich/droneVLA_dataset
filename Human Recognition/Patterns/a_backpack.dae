@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 4.3.2 commit date:2024-12-16, commit time:21:10, hash:32f5fdce0a0a</authoring_tool>
     </contributor>
-    <created>2025-02-25T17:30:38</created>
-    <modified>2025-02-25T17:30:38</modified>
+    <created>2025-02-28T21:04:06</created>
+    <modified>2025-02-28T21:04:06</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -64,16 +64,16 @@
     </light>
   </library_lights>
   <library_effects>
-    <effect id="with_a_backpack-effect">
+    <effect id="a_backpack-effect">
       <profile_COMMON>
-        <newparam sid="with_a_backpack_jpg-surface">
+        <newparam sid="a_backpack_jpg-surface">
           <surface type="2D">
-            <init_from>with_a_backpack_jpg</init_from>
+            <init_from>a_backpack_jpg</init_from>
           </surface>
         </newparam>
-        <newparam sid="with_a_backpack_jpg-sampler">
+        <newparam sid="a_backpack_jpg-sampler">
           <sampler2D>
-            <source>with_a_backpack_jpg-surface</source>
+            <source>a_backpack_jpg-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -82,7 +82,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="with_a_backpack_jpg-sampler" texcoord="UVMap"/>
+              <texture texture="a_backpack_jpg-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.5</float>
@@ -93,54 +93,54 @@
     </effect>
   </library_effects>
   <library_images>
-    <image id="with_a_backpack_jpg" name="with_a_backpack_jpg">
-      <init_from>with_a_backpack.jpg</init_from>
+    <image id="a_backpack_jpg" name="a_backpack_jpg">
+      <init_from>a_backpack.jpg</init_from>
     </image>
   </library_images>
   <library_materials>
-    <material id="with_a_backpack-material" name="with_a_backpack">
-      <instance_effect url="#with_a_backpack-effect"/>
+    <material id="a_backpack-material" name="a_backpack">
+      <instance_effect url="#a_backpack-effect"/>
     </material>
   </library_materials>
   <library_geometries>
-    <geometry id="with_a_backpack-mesh" name="with_a_backpack">
+    <geometry id="a_backpack-mesh" name="a_backpack">
       <mesh>
-        <source id="with_a_backpack-mesh-positions">
-          <float_array id="with_a_backpack-mesh-positions-array" count="12">-0.75 -0.5 0 0.75 -0.5 0 -0.75 0.5 0 0.75 0.5 0</float_array>
+        <source id="a_backpack-mesh-positions">
+          <float_array id="a_backpack-mesh-positions-array" count="12">-0.75 -0.5 0 0.75 -0.5 0 -0.75 0.5 0 0.75 0.5 0</float_array>
           <technique_common>
-            <accessor source="#with_a_backpack-mesh-positions-array" count="4" stride="3">
+            <accessor source="#a_backpack-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="with_a_backpack-mesh-normals">
-          <float_array id="with_a_backpack-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
+        <source id="a_backpack-mesh-normals">
+          <float_array id="a_backpack-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
           <technique_common>
-            <accessor source="#with_a_backpack-mesh-normals-array" count="2" stride="3">
+            <accessor source="#a_backpack-mesh-normals-array" count="2" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="with_a_backpack-mesh-map-0">
-          <float_array id="with_a_backpack-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
+        <source id="a_backpack-mesh-map-0">
+          <float_array id="a_backpack-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
           <technique_common>
-            <accessor source="#with_a_backpack-mesh-map-0-array" count="6" stride="2">
+            <accessor source="#a_backpack-mesh-map-0-array" count="6" stride="2">
               <param name="S" type="float"/>
               <param name="T" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <vertices id="with_a_backpack-mesh-vertices">
-          <input semantic="POSITION" source="#with_a_backpack-mesh-positions"/>
+        <vertices id="a_backpack-mesh-vertices">
+          <input semantic="POSITION" source="#a_backpack-mesh-positions"/>
         </vertices>
-        <triangles material="with_a_backpack-material" count="2">
-          <input semantic="VERTEX" source="#with_a_backpack-mesh-vertices" offset="0"/>
-          <input semantic="NORMAL" source="#with_a_backpack-mesh-normals" offset="1"/>
-          <input semantic="TEXCOORD" source="#with_a_backpack-mesh-map-0" offset="2" set="0"/>
+        <triangles material="a_backpack-material" count="2">
+          <input semantic="VERTEX" source="#a_backpack-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#a_backpack-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#a_backpack-mesh-map-0" offset="2" set="0"/>
           <p>1 0 0 2 0 1 0 0 2 1 1 3 3 1 4 2 1 5</p>
         </triangles>
       </mesh>
@@ -148,12 +148,12 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="with_a_backpack" name="with_a_backpack" type="NODE">
+      <node id="a_backpack" name="a_backpack" type="NODE">
         <matrix sid="transform">-4.37114e-8 4.37114e-8 1 0 1 1.91069e-15 4.37114e-8 0 0 1 -4.37114e-8 0 0 0 0 1</matrix>
-        <instance_geometry url="#with_a_backpack-mesh" name="with_a_backpack">
+        <instance_geometry url="#a_backpack-mesh" name="a_backpack">
           <bind_material>
             <technique_common>
-              <instance_material symbol="with_a_backpack-material" target="#with_a_backpack-material">
+              <instance_material symbol="a_backpack-material" target="#a_backpack-material">
                 <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
               </instance_material>
             </technique_common>
