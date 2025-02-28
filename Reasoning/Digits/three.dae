@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 4.3.2 commit date:2024-12-16, commit time:21:10, hash:32f5fdce0a0a</authoring_tool>
     </contributor>
-    <created>2025-02-24T15:18:34</created>
-    <modified>2025-02-24T15:18:34</modified>
+    <created>2025-02-27T17:00:25</created>
+    <modified>2025-02-27T17:00:25</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -66,14 +66,14 @@
   <library_effects>
     <effect id="three-effect">
       <profile_COMMON>
-        <newparam sid="three_jpg-surface">
+        <newparam sid="three_webp-surface">
           <surface type="2D">
-            <init_from>three_jpg</init_from>
+            <init_from>three_webp</init_from>
           </surface>
         </newparam>
-        <newparam sid="three_jpg-sampler">
+        <newparam sid="three_webp-sampler">
           <sampler2D>
-            <source>three_jpg-surface</source>
+            <source>three_webp-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -82,7 +82,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="three_jpg-sampler" texcoord="UVMap"/>
+              <texture texture="three_webp-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.5</float>
@@ -93,8 +93,8 @@
     </effect>
   </library_effects>
   <library_images>
-    <image id="three_jpg" name="three_jpg">
-      <init_from>three.jpg</init_from>
+    <image id="three_webp" name="three_webp">
+      <init_from>three.webp</init_from>
     </image>
   </library_images>
   <library_materials>
@@ -103,44 +103,44 @@
     </material>
   </library_materials>
   <library_geometries>
-    <geometry id="three-mesh" name="three">
+    <geometry id="three_001-mesh" name="three.001">
       <mesh>
-        <source id="three-mesh-positions">
-          <float_array id="three-mesh-positions-array" count="12">-0.5 -0.5 0 0.5 -0.5 0 -0.5 0.5 0 0.5 0.5 0</float_array>
+        <source id="three_001-mesh-positions">
+          <float_array id="three_001-mesh-positions-array" count="12">-0.5 -0.5 0 0.5 -0.5 0 -0.5 0.5 0 0.5 0.5 0</float_array>
           <technique_common>
-            <accessor source="#three-mesh-positions-array" count="4" stride="3">
+            <accessor source="#three_001-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="three-mesh-normals">
-          <float_array id="three-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
+        <source id="three_001-mesh-normals">
+          <float_array id="three_001-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
           <technique_common>
-            <accessor source="#three-mesh-normals-array" count="2" stride="3">
+            <accessor source="#three_001-mesh-normals-array" count="2" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="three-mesh-map-0">
-          <float_array id="three-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
+        <source id="three_001-mesh-map-0">
+          <float_array id="three_001-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
           <technique_common>
-            <accessor source="#three-mesh-map-0-array" count="6" stride="2">
+            <accessor source="#three_001-mesh-map-0-array" count="6" stride="2">
               <param name="S" type="float"/>
               <param name="T" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <vertices id="three-mesh-vertices">
-          <input semantic="POSITION" source="#three-mesh-positions"/>
+        <vertices id="three_001-mesh-vertices">
+          <input semantic="POSITION" source="#three_001-mesh-positions"/>
         </vertices>
         <triangles material="three-material" count="2">
-          <input semantic="VERTEX" source="#three-mesh-vertices" offset="0"/>
-          <input semantic="NORMAL" source="#three-mesh-normals" offset="1"/>
-          <input semantic="TEXCOORD" source="#three-mesh-map-0" offset="2" set="0"/>
+          <input semantic="VERTEX" source="#three_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#three_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#three_001-mesh-map-0" offset="2" set="0"/>
           <p>1 0 0 2 0 1 0 0 2 1 1 3 3 1 4 2 1 5</p>
         </triangles>
       </mesh>
@@ -150,7 +150,7 @@
     <visual_scene id="Scene" name="Scene">
       <node id="three" name="three" type="NODE">
         <matrix sid="transform">-4.37114e-8 4.37114e-8 1 0 1 1.91069e-15 4.37114e-8 0 0 1 -4.37114e-8 0 0 0 0 1</matrix>
-        <instance_geometry url="#three-mesh" name="three">
+        <instance_geometry url="#three_001-mesh" name="three">
           <bind_material>
             <technique_common>
               <instance_material symbol="three-material" target="#three-material">

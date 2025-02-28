@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 4.3.2 commit date:2024-12-16, commit time:21:10, hash:32f5fdce0a0a</authoring_tool>
     </contributor>
-    <created>2025-02-24T15:18:45</created>
-    <modified>2025-02-24T15:18:45</modified>
+    <created>2025-02-27T17:00:52</created>
+    <modified>2025-02-27T17:00:52</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -66,14 +66,14 @@
   <library_effects>
     <effect id="two-effect">
       <profile_COMMON>
-        <newparam sid="two_jpg-surface">
+        <newparam sid="two_png-surface">
           <surface type="2D">
-            <init_from>two_jpg</init_from>
+            <init_from>two_png</init_from>
           </surface>
         </newparam>
-        <newparam sid="two_jpg-sampler">
+        <newparam sid="two_png-sampler">
           <sampler2D>
-            <source>two_jpg-surface</source>
+            <source>two_png-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -82,7 +82,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="two_jpg-sampler" texcoord="UVMap"/>
+              <texture texture="two_png-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.5</float>
@@ -93,8 +93,8 @@
     </effect>
   </library_effects>
   <library_images>
-    <image id="two_jpg" name="two_jpg">
-      <init_from>two.jpg</init_from>
+    <image id="two_png" name="two_png">
+      <init_from>two.png</init_from>
     </image>
   </library_images>
   <library_materials>
@@ -106,7 +106,7 @@
     <geometry id="two-mesh" name="two">
       <mesh>
         <source id="two-mesh-positions">
-          <float_array id="two-mesh-positions-array" count="12">-0.5 -0.5 0 0.5 -0.5 0 -0.5 0.5 0 0.5 0.5 0</float_array>
+          <float_array id="two-mesh-positions-array" count="12">-0.3847656 -0.5 0 0.3847656 -0.5 0 -0.3847656 0.5 0 0.3847656 0.5 0</float_array>
           <technique_common>
             <accessor source="#two-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
