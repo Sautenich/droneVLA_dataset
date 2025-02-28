@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 4.3.2 commit date:2024-12-16, commit time:21:10, hash:32f5fdce0a0a</authoring_tool>
     </contributor>
-    <created>2025-02-28T18:07:54</created>
-    <modified>2025-02-28T18:07:54</modified>
+    <created>2025-02-28T18:10:08</created>
+    <modified>2025-02-28T18:10:08</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -64,16 +64,16 @@
     </light>
   </library_lights>
   <library_effects>
-    <effect id="B-effect">
+    <effect id="I-effect">
       <profile_COMMON>
-        <newparam sid="B_jpg-surface">
+        <newparam sid="I_jpg-surface">
           <surface type="2D">
-            <init_from>B_jpg</init_from>
+            <init_from>I_jpg</init_from>
           </surface>
         </newparam>
-        <newparam sid="B_jpg-sampler">
+        <newparam sid="I_jpg-sampler">
           <sampler2D>
-            <source>B_jpg-surface</source>
+            <source>I_jpg-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -82,7 +82,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="B_jpg-sampler" texcoord="UVMap"/>
+              <texture texture="I_jpg-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.5</float>
@@ -93,54 +93,54 @@
     </effect>
   </library_effects>
   <library_images>
-    <image id="B_jpg" name="B_jpg">
-      <init_from>B.jpg</init_from>
+    <image id="I_jpg" name="I_jpg">
+      <init_from>I.jpg</init_from>
     </image>
   </library_images>
   <library_materials>
-    <material id="B-material" name="B">
-      <instance_effect url="#B-effect"/>
+    <material id="I-material" name="I">
+      <instance_effect url="#I-effect"/>
     </material>
   </library_materials>
   <library_geometries>
-    <geometry id="B-mesh" name="B">
+    <geometry id="I-mesh" name="I">
       <mesh>
-        <source id="B-mesh-positions">
-          <float_array id="B-mesh-positions-array" count="12">-0.5 -0.5 0 0.5 -0.5 0 -0.5 0.5 0 0.5 0.5 0</float_array>
+        <source id="I-mesh-positions">
+          <float_array id="I-mesh-positions-array" count="12">-0.3861518 -0.5 0 0.3861518 -0.5 0 -0.3861518 0.5 0 0.3861518 0.5 0</float_array>
           <technique_common>
-            <accessor source="#B-mesh-positions-array" count="4" stride="3">
+            <accessor source="#I-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="B-mesh-normals">
-          <float_array id="B-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
+        <source id="I-mesh-normals">
+          <float_array id="I-mesh-normals-array" count="6">0 0 1 0 0 1</float_array>
           <technique_common>
-            <accessor source="#B-mesh-normals-array" count="2" stride="3">
+            <accessor source="#I-mesh-normals-array" count="2" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="B-mesh-map-0">
-          <float_array id="B-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
+        <source id="I-mesh-map-0">
+          <float_array id="I-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
           <technique_common>
-            <accessor source="#B-mesh-map-0-array" count="6" stride="2">
+            <accessor source="#I-mesh-map-0-array" count="6" stride="2">
               <param name="S" type="float"/>
               <param name="T" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <vertices id="B-mesh-vertices">
-          <input semantic="POSITION" source="#B-mesh-positions"/>
+        <vertices id="I-mesh-vertices">
+          <input semantic="POSITION" source="#I-mesh-positions"/>
         </vertices>
-        <triangles material="B-material" count="2">
-          <input semantic="VERTEX" source="#B-mesh-vertices" offset="0"/>
-          <input semantic="NORMAL" source="#B-mesh-normals" offset="1"/>
-          <input semantic="TEXCOORD" source="#B-mesh-map-0" offset="2" set="0"/>
+        <triangles material="I-material" count="2">
+          <input semantic="VERTEX" source="#I-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#I-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#I-mesh-map-0" offset="2" set="0"/>
           <p>1 0 0 2 0 1 0 0 2 1 1 3 3 1 4 2 1 5</p>
         </triangles>
       </mesh>
@@ -148,12 +148,12 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="B" name="B" type="NODE">
+      <node id="I" name="I" type="NODE">
         <matrix sid="transform">-4.37114e-8 4.37114e-8 1 0 1 1.91069e-15 4.37114e-8 0 0 1 -4.37114e-8 0 0 0 0 1</matrix>
-        <instance_geometry url="#B-mesh" name="B">
+        <instance_geometry url="#I-mesh" name="I">
           <bind_material>
             <technique_common>
-              <instance_material symbol="B-material" target="#B-material">
+              <instance_material symbol="I-material" target="#I-material">
                 <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
               </instance_material>
             </technique_common>

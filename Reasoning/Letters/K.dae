@@ -3,10 +3,10 @@
   <asset>
     <contributor>
       <author>Blender User</author>
-      <authoring_tool>Blender 4.2.1 LTS commit date:2024-08-19, commit time:11:21, hash:396f546c9d82</authoring_tool>
+      <authoring_tool>Blender 4.3.2 commit date:2024-12-16, commit time:21:10, hash:32f5fdce0a0a</authoring_tool>
     </contributor>
-    <created>2025-02-26T22:27:09</created>
-    <modified>2025-02-26T22:27:09</modified>
+    <created>2025-02-28T18:14:41</created>
+    <modified>2025-02-28T18:14:41</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -49,15 +49,11 @@
           <red sid="red" type="float">1</red>
           <green sid="green" type="float">1</green>
           <blue sid="blue" type="float">1</blue>
-          <shadow_r sid="blender_shadow_r" type="float">0</shadow_r>
-          <shadow_g sid="blender_shadow_g" type="float">0</shadow_g>
-          <shadow_b sid="blender_shadow_b" type="float">0</shadow_b>
           <energy sid="blender_energy" type="float">1000</energy>
           <spotsize sid="spotsize" type="float">75</spotsize>
           <spotblend sid="spotblend" type="float">0.15</spotblend>
           <clipsta sid="clipsta" type="float">0.04999995</clipsta>
-          <clipend sid="clipend" type="float">30.002</clipend>
-          <bias sid="bias" type="float">1</bias>
+          <clipend sid="clipend" type="float">40</clipend>
           <radius sid="radius" type="float">0.1</radius>
           <area_shape sid="area_shape" type="int">1</area_shape>
           <area_size sid="area_size" type="float">0.1</area_size>
@@ -70,14 +66,14 @@
   <library_effects>
     <effect id="K-effect">
       <profile_COMMON>
-        <newparam sid="K_png-surface">
+        <newparam sid="K_jpg-surface">
           <surface type="2D">
-            <init_from>K_png</init_from>
+            <init_from>K_jpg</init_from>
           </surface>
         </newparam>
-        <newparam sid="K_png-sampler">
+        <newparam sid="K_jpg-sampler">
           <sampler2D>
-            <source>K_png-surface</source>
+            <source>K_jpg-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -86,7 +82,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="K_png-sampler" texcoord="UVMap"/>
+              <texture texture="K_jpg-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.5</float>
@@ -97,8 +93,8 @@
     </effect>
   </library_effects>
   <library_images>
-    <image id="K_png" name="K_png">
-      <init_from>K.png</init_from>
+    <image id="K_jpg" name="K_jpg">
+      <init_from>K.jpg</init_from>
     </image>
   </library_images>
   <library_materials>
@@ -110,7 +106,7 @@
     <geometry id="K-mesh" name="K">
       <mesh>
         <source id="K-mesh-positions">
-          <float_array id="K-mesh-positions-array" count="12">-0.5 -0.5 0 0.5 -0.5 0 -0.5 0.5 0 0.5 0.5 0</float_array>
+          <float_array id="K-mesh-positions-array" count="12">-0.3861518 -0.5 0 0.3861518 -0.5 0 -0.3861518 0.5 0 0.3861518 0.5 0</float_array>
           <technique_common>
             <accessor source="#K-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>

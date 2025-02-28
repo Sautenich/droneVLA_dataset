@@ -3,10 +3,10 @@
   <asset>
     <contributor>
       <author>Blender User</author>
-      <authoring_tool>Blender 4.2.1 LTS commit date:2024-08-19, commit time:11:21, hash:396f546c9d82</authoring_tool>
+      <authoring_tool>Blender 4.3.2 commit date:2024-12-16, commit time:21:10, hash:32f5fdce0a0a</authoring_tool>
     </contributor>
-    <created>2025-02-26T22:33:01</created>
-    <modified>2025-02-26T22:33:01</modified>
+    <created>2025-02-28T18:20:25</created>
+    <modified>2025-02-28T18:20:25</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -49,15 +49,11 @@
           <red sid="red" type="float">1</red>
           <green sid="green" type="float">1</green>
           <blue sid="blue" type="float">1</blue>
-          <shadow_r sid="blender_shadow_r" type="float">0</shadow_r>
-          <shadow_g sid="blender_shadow_g" type="float">0</shadow_g>
-          <shadow_b sid="blender_shadow_b" type="float">0</shadow_b>
           <energy sid="blender_energy" type="float">1000</energy>
           <spotsize sid="spotsize" type="float">75</spotsize>
           <spotblend sid="spotblend" type="float">0.15</spotblend>
           <clipsta sid="clipsta" type="float">0.04999995</clipsta>
-          <clipend sid="clipend" type="float">30.002</clipend>
-          <bias sid="bias" type="float">1</bias>
+          <clipend sid="clipend" type="float">40</clipend>
           <radius sid="radius" type="float">0.1</radius>
           <area_shape sid="area_shape" type="int">1</area_shape>
           <area_size sid="area_size" type="float">0.1</area_size>
@@ -70,14 +66,14 @@
   <library_effects>
     <effect id="X-effect">
       <profile_COMMON>
-        <newparam sid="X_jpeg-surface">
+        <newparam sid="X_png-surface">
           <surface type="2D">
-            <init_from>X_jpeg</init_from>
+            <init_from>X_png</init_from>
           </surface>
         </newparam>
-        <newparam sid="X_jpeg-sampler">
+        <newparam sid="X_png-sampler">
           <sampler2D>
-            <source>X_jpeg-surface</source>
+            <source>X_png-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -86,7 +82,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="X_jpeg-sampler" texcoord="UVMap"/>
+              <texture texture="X_png-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.5</float>
@@ -97,8 +93,8 @@
     </effect>
   </library_effects>
   <library_images>
-    <image id="X_jpeg" name="X_jpeg">
-      <init_from>X.jpeg</init_from>
+    <image id="X_png" name="X_png">
+      <init_from>X.png</init_from>
     </image>
   </library_images>
   <library_materials>
@@ -110,7 +106,7 @@
     <geometry id="X-mesh" name="X">
       <mesh>
         <source id="X-mesh-positions">
-          <float_array id="X-mesh-positions-array" count="12">-0.5298165 -0.5 0 0.5298165 -0.5 0 -0.5298165 0.5 0 0.5298165 0.5 0</float_array>
+          <float_array id="X-mesh-positions-array" count="12">-0.3847656 -0.5 0 0.3847656 -0.5 0 -0.3847656 0.5 0 0.3847656 0.5 0</float_array>
           <technique_common>
             <accessor source="#X-mesh-positions-array" count="4" stride="3">
               <param name="X" type="float"/>
